@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <title>Phoenix Host — PS4</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="mark">P</span><div><b>PHOENIX</b><small>PS4 WEBKIT HOST</small></div></div>
+      <div class="topmeta"><span class="dot"></span> HOST INTERFACE <span class="version">v0.1.0</span></div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow">PLAYSTATION 4 / WEBKIT ENVIRONMENT</div>
+        <h1>Own your<br><em>console.</em></h1>
+        <p class="intro">Локальна панель керування хостом. Мінімум скриптів, зрозумілий стан і окремий модуль експлойту.</p>
+        <div class="specs">
+          <div><small>TARGET FIRMWARE</small><strong>11.00</strong></div>
+          <div><small>CONSOLE</small><strong>PS4 Pro</strong></div>
+          <div><small>HOST MODE</small><strong>Online / Local</strong></div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="panel mainpanel">
+          <div class="panelhead"><span class="num">01</span><h2>Exploit module</h2><span class="tag pending">NOT INSTALLED</span></div>
+          <p class="muted">Інтерфейс готовий. Сумісний exploit-chain для FW 11.00 буде доданий окремим перевіреним модулем. Ця сторінка сама по собі нічого не експлуатує.</p>
+          <div class="modulebox">
+            <div class="moduleicon">⌁</div>
+            <div><b>FW 11.00 profile</b><small>Очікує підключення модуля Slopkit / Lapse або CSSFontFace / Lapse.</small></div>
+          </div>
+          <button class="button" id="compatBtn">Перевірити профіль</button>
+          <div class="notice" id="compatResult" aria-live="polite">Модуль експлойту не підключений.</div>
+        </article>
+
+        <article class="panel">
+          <div class="panelhead"><span class="num">02</span><h2>Host status</h2></div>
+          <div class="statusrow"><span>JavaScript</span><b class="good" id="jsStatus">ACTIVE</b></div>
+          <div class="statusrow"><span>Local storage</span><b id="storageStatus">CHECKING</b></div>
+          <div class="statusrow"><span>Network</span><b id="networkStatus">CHECKING</b></div>
+          <div class="statusrow"><span>Service worker</span><b class="muted">NOT USED</b></div>
+          <p class="hint">Для сумісності зі старим браузером PS4 базова сторінка не залежить від Service Worker чи важких бібліотек.</p>
+        </article>
+
+        <article class="panel">
+          <div class="panelhead"><span class="num">03</span><h2>Payload library</h2></div>
+          <div class="empty"><span>＋</span><b>Payloads not configured</b><small>Сумісні payload-файли будуть додані після перевірки джерела та версій.</small></div>
+        </article>
+
+        <article class="panel">
+          <div class="panelhead"><span class="num">04</span><h2>Diagnostic log</h2><button class="textbutton" id="clearLog">CLEAR</button></div>
+          <div class="log" id="log" aria-live="polite"></div>
+        </article>
+      </section>
+    </main>
+    <footer><span>PHOENIX HOST / DEVELOPMENT BUILD</span><span>BD-JB MODULE: EXCLUDED</span></footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
